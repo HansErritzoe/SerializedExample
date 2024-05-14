@@ -2,8 +2,8 @@ public class CompetitionMember extends Member {
     private static final long serialVersionUID = 1L; // Unique identifier for Serializable classes
     private String competition;
 
-    public CompetitionMember(String name, int age, String competition) {
-        super(name, age);
+    public CompetitionMember(int id, String name, int age, String competition) {
+        super(id, name, age);
         this.competition = competition;
     }
 
@@ -13,6 +13,6 @@ public class CompetitionMember extends Member {
 
     @Override
     public String toString() {
-        return "CompetitionMember{name='" + getName() + "', age=" + getAge() + ", competition='" + competition + "'}";
+        return "CompetitionMember{id=" + getId() + ", name='" + getName() + "', age=" + getAge() + ", competition='" + competition + "'}";
     }
 }
